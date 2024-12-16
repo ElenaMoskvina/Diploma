@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Diploma.MainPage"
+             >
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="0"
+            Spacing="0"
+            BackgroundColor="#C9E1DF"
+            >
+            
+            <Image
+                Source="mainpage_picture.png"
+                VerticalOptions="Start"
+                HeightRequest="300"
+                Aspect="AspectFill"
+               
+                SemanticProperties.Description="mainpage_picture" />
+
+            <Label 
+                Text="Talking App"
+                HorizontalOptions="Center"
+                FontSize="30"
+                TextColor="Black"
+                Margin="10"
+                />
+          
+            <Button
+                x:Name="LogInButton"
+                Text="Log In" 
+                HorizontalOptions="Fill" 
+                Margin="10"
+                BackgroundColor="White"
+                TextColor="#18436A"
+                FontSize="20"
+                Clicked ="LogInButtonClicked" 
+                />
+            <Button
+                x:Name="SignUpButton"
+                Text="Sign Up" 
+                HorizontalOptions="Fill" 
+                Margin="10"
+                BackgroundColor="White"
+                TextColor="#18436A"
+                FontSize="20"
+              
+                />
+            
+         
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
