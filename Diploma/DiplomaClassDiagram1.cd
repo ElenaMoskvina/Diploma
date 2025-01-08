@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Diploma.Models.TimeTableModel">
+    <Position X="14.75" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEAAAIAAAA=</HashCode>
+      <FileName>Models\TimeTableModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Platforms.Android.AlarmReceiver">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Platforms\Android\AlarmReceiver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Platforms.Android.BootReceiver">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Platforms\Android\BootReceiver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Platforms.Android.NotificationManagerService" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAIAAAAFAAAAAEAIAQAAAQAAABAAAAAA=</HashCode>
+      <FileName>Platforms\Android\NotificationManagerService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Diploma.Platforms.Android.NotificationPermission">
+    <Position X="11.25" Y="5.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Platforms\Android\NotificationPermission.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.MainActivity">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Platforms\Android\MainActivity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.MainApplication">
+    <Position X="7.5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Platforms\Android\MainApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.App">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.AppShell">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>AppShell.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.MainPage">
+    <Position X="12" Y="3" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAABAAAAAAAAAAABAAAAAAAACAAA=</HashCode>
+      <FileName>MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.MauiProgram">
+    <Position X="4.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MauiProgram.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.NotificationEventArgs">
+    <Position X="6" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>NotificationEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.View.CallPage">
+    <Position X="11.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\CallPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.View.LogInPage">
+    <Position X="3" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAABAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>View\LogInPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.View.MainMenuPage">
+    <Position X="9.5" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAABAAAAAAAAAAAAABAAAAABAAAA=</HashCode>
+      <FileName>View\MainMenuPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.View.TimeTablePage">
+    <Position X="17.5" Y="6.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAABAAAAAAAIAAABAAAgAAAAAAAA=</HashCode>
+      <FileName>View\TimeTablePage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="15.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Android.Content.BroadcastReceiver" Collapsed="true">
+    <Position X="1.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Microsoft.Maui.Controls.Application" Collapsed="true">
+    <Position X="14.25" Y="1" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Microsoft.Maui.Controls.ContentPage" Collapsed="true">
+    <Position X="16.75" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.EventArgs" Collapsed="true">
+    <Position X="1.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Microsoft.Maui.ApplicationModel.Permissions" Collapsed="true">
+    <Position X="18.25" Y="5.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.Phone" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.StorageRead" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.Bluetooth" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.CalendarRead" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.BasePermission" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.Maps" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.StorageWrite" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.NetworkState" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.Sms" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.Media" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.Sensors" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.LocationAlways" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.ContactsRead" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.NearbyWifiDevices" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.Photos" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.ContactsWrite" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.Reminders" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.Vibrate" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.PhotosAddOnly" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.BasePlatformPermission" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.Camera" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.PostNotifications" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.PermissionResult" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.Microphone" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.Flashlight" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.Battery" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.CalendarWrite" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.LaunchApp" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.Speech" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.LocationWhenInUse" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="Diploma.INotificationManagerService">
+    <Position X="11.75" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NotificationManagerService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

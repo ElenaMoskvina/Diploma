@@ -16,8 +16,13 @@ namespace Diploma
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
+
+#if ANDROID
+            builder.Services.AddSingleton<INotificationManagerService, Diploma.Platforms.Android.NotificationManagerService>();          
+#endif
+            builder.Services.AddSingleton<MainPage>();
 
             return builder.Build();
         }

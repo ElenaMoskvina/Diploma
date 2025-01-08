@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Diploma.View.MainMenuPage"
+             >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height ="0.5*"/>
+            <RowDefinition Height ="1*"/>
+            <RowDefinition Height ="1*"/>
+            <RowDefinition Height ="1*"/>
+            <RowDefinition Height ="0.5*"/>
+        </Grid.RowDefinitions>
+
+
+
+        <BoxView BackgroundColor="#4AA0AC" Grid.Column="0" Grid.Row="0" />
+        <BoxView BackgroundColor="#4AA0AC" Grid.Column="1" Grid.Row="0" />
+        <BoxView BackgroundColor="#EFF5F5" Grid.Column="0" Grid.Row="1" />
+        <BoxView BackgroundColor="#EFF5F5" Grid.Column="1" Grid.Row="1" />
+        <BoxView BackgroundColor="#EFF5F5" Grid.Column="0" Grid.Row="2" />
+        <BoxView BackgroundColor="#EFF5F5" Grid.Column="1" Grid.Row="2" />
+        <BoxView BackgroundColor="#EFF5F5" Grid.Column="0" Grid.Row="3" />
+        <BoxView BackgroundColor="#EFF5F5" Grid.Column="1" Grid.Row="3" />
+        <BoxView BackgroundColor="#EFF5F5" Grid.Column="0" Grid.Row="4" />
+        <BoxView BackgroundColor="#EFF5F5" Grid.Column="1" Grid.Row="4" />
+
+        <Button x:Name="Menu_ToLogInPageButton" Grid.Column="0" Grid.Row="0"
+          HeightRequest="40" WidthRequest="90"  
+          HorizontalOptions="Start" VerticalOptions ="Start" 
+          Text ="back" BackgroundColor="#4AA0AC" TextColor="White"
+          FontSize="12" Clicked="Menu_ToLogInPageButtonClicked"
+          />
+        <Label
+            Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"
+            Text="Talking App" TextColor="White" FontSize="18" FontAttributes ="Bold"
+             HorizontalOptions="Start" VerticalOptions ="End" 
+            Margin="12"
+            />
+
+        <ImageButton x:Name="LessonsForTodayButton" Grid.Column="0" Grid.Row="1" 
+                 
+         HorizontalOptions="FillAndExpand" VerticalOptions ="FillAndExpand" Margin="12" Aspect="Fill"
+         BackgroundColor="White" Source="lessons_for_today_picture.png" BorderColor="White"
+            CornerRadius="0"
+                />
+
+        <Button x:Name="LessonRecordingsButton" Grid.Column="1" Grid.Row="1"
+        HorizontalOptions="Fill" VerticalOptions ="Fill" Margin="12"
+        Text ="Lesson Recordings" BackgroundColor="White" TextColor="Black"
+        FontSize="12" CornerRadius="0"
+        />
+
+        <Button x:Name="TimeTableButton" Grid.Column="0" Grid.Row="2"
+         HorizontalOptions="Fill" VerticalOptions ="Fill" Margin="12"
+         Text ="Time table" BackgroundColor="White" TextColor="Black"
+         FontSize="12" CornerRadius="0" Clicked="OnTimeTableClicked"
+         />
+
+        <Button x:Name="TopicsButton" Grid.Column="1" Grid.Row="2"
+        HorizontalOptions="Fill" VerticalOptions ="Fill" Margin="12"
+        Text ="Topics" BackgroundColor="White" TextColor="Black"
+        FontSize="12" CornerRadius="0"
+        />
+
+        <Button x:Name="AssesmentTestButton" Grid.Column="0" Grid.Row="3"
+        HorizontalOptions="Fill" VerticalOptions ="Fill" Margin="12"
+        Text ="Assesment test" BackgroundColor="White" TextColor="Black"
+        FontSize="12" CornerRadius="0"
+        />
+
+        <Button x:Name="ProfileButton" Grid.Column="1" Grid.Row="3"
+        HorizontalOptions="Fill" VerticalOptions ="Fill" Margin="12"
+        Text ="Profile" BackgroundColor="White" TextColor="Black"
+        FontSize="12" CornerRadius="0"
+        />
+        <Button x:Name="TalkNowButton" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2"
+        HorizontalOptions="Fill" VerticalOptions ="Fill" Margin="12"
+        Text ="Talk now!" BackgroundColor="White" TextColor="#4AA0AC" FontAttributes="Bold"
+        FontSize="15" CornerRadius="0" Clicked="Menu_ToCallPage"
+ />
+
+    </Grid>
+
+
+
+
+
+</ContentPage>

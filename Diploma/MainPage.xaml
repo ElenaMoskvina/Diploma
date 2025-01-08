@@ -5,7 +5,7 @@
              >
 
     <ScrollView>
-        <VerticalStackLayout
+        <VerticalStackLayout x:Name="verticalStackLayout"
             Padding="0"
             Spacing="0"
             BackgroundColor="#C9E1DF"
@@ -35,7 +35,10 @@
                 BackgroundColor="White"
                 TextColor="#18436A"
                 FontSize="20"
-                Clicked ="LogInButtonClicked" 
+               Clicked ="LogInButtonClicked"
+             
+                
+                
                 />
             <Button
                 x:Name="SignUpButton"
@@ -44,12 +47,14 @@
                 Margin="10"
                 BackgroundColor="White"
                 TextColor="#18436A"
-                FontSize="20"
-              
-                />
+                FontSize="20"      />
+                  <!--Clicked = "OnScheduleClick"-->
+          
             
          
         </VerticalStackLayout>
     </ScrollView>
 
 </ContentPage>
+
+

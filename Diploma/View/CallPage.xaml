@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+          
+             x:Class="Diploma.View.CallPage"
+             >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="1*"/>
+           
+
+        </Grid.RowDefinitions>
+        <BoxView BackgroundColor="Black" Grid.Column="0" Grid.Row="0" />
+        <BoxView BackgroundColor="Black" Grid.Column="1" Grid.Row="0" />
+        <BoxView BackgroundColor="Black" Grid.Column="2" Grid.Row="0" />
+        <BoxView BackgroundColor="Black" Grid.Column="3" Grid.Row="0" />
+        <BoxView BackgroundColor="Black" Grid.Column="4" Grid.Row="0" />
+
+        <BoxView BackgroundColor="Black" Grid.Column="0" Grid.Row="1" />
+        <BoxView BackgroundColor="Black" Grid.Column="1" Grid.Row="1" />
+        <BoxView BackgroundColor="Black" Grid.Column="2" Grid.Row="1" />
+        <BoxView BackgroundColor="Black" Grid.Column="3" Grid.Row="1" />
+        <BoxView BackgroundColor="Black" Grid.Column="4" Grid.Row="1" />
+
+        <Image Source="call_page_label.png" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" VerticalOptions="Start" HeightRequest="100" Margin="100" />
+       
+        
+        
+        <Label Text="Talking App &#10;Входящий вызов"  
+               FontSize="20" 
+               TextColor="White"  
+               Grid.Column="0" 
+               Grid.Row = "0"
+               Grid.ColumnSpan="5" 
+               HorizontalOptions ="Center" 
+               VerticalOptions="Center"
+               HorizontalTextAlignment = "Center"/>
+
+        <ImageButton x:Name="DeclineButton" Grid.Column="1" Grid.Row="1"
+                HorizontalOptions="Fill" VerticalOptions ="Fill" 
+                Source="declinte_button.png"
+                Clicked="CallPage_ToMainMenuPage"
+                      Margin="6"
+         />
+        <ImageButton x:Name="DynamicButton" Grid.Column="2" Grid.Row="1"
+           HorizontalOptions="Fill" VerticalOptions ="Fill" 
+           Source="dynamic_button.png"
+           Margin="6"
+          
+        />
+        <ImageButton x:Name="AcceptButton" Grid.Column="3" Grid.Row="1"
+           HorizontalOptions="Fill" VerticalOptions ="Fill" 
+           Source="accept_button.png"
+                      Margin="6"
+          
+        />
+
+    </Grid>
+</ContentPage>

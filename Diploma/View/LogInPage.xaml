@@ -30,8 +30,8 @@
             <BoxView BackgroundColor="#4AA0AC" Grid.Column="3" Grid.Row="1" />
 
             <BoxView BackgroundColor="#C9E1DF" Grid.Column="0" Grid.Row="2" />
-            <BoxView BackgroundColor="White" Grid.Column="1" Grid.Row="2" />
-            <BoxView BackgroundColor="White" Grid.Column="2" Grid.Row="2" />
+            <BoxView BackgroundColor="White" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" />
+            
             <BoxView BackgroundColor="#C9E1DF" Grid.Column="3" Grid.Row="2" />
 
             <BoxView BackgroundColor="#C9E1DF" Grid.Column="0" Grid.Row="3" />
@@ -46,24 +46,28 @@
                     HorizontalOptions="Start" VerticalOptions ="Start" 
                     Text ="back" BackgroundColor="#4AA0AC" TextColor="White"
                     FontSize="12" Clicked="ToMainPage"
-                    
-                    />
+         />
 
         <Button x:Name="LogInSwitcher" Grid.Column="1" Grid.Row="1"
              HeightRequest="40" WidthRequest="80"  
              HorizontalOptions="Start" VerticalOptions ="Start" 
              Text ="Log In" BackgroundColor="White" TextColor="#18436A"
              FontSize="12" FontAttributes="Bold" 
-             
-             />
+         />
 
         <Button x:Name="SignUpSwitcher" Grid.Column="2" Grid.Row="1"
              HeightRequest="40" WidthRequest="80"  
              HorizontalOptions="Start" VerticalOptions ="Start" 
              Text ="Sign Up" BackgroundColor="White" TextColor="#18436A" 
              FontSize="12" FontAttributes="None" 
-     
-     />
+          />
+
+        <Button x:Name="LogIn_LogInButton" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2"
+                 HorizontalOptions="Fill" VerticalOptions ="End" 
+                 Text ="Log In" BackgroundColor="#4AA0AC" TextColor="White"
+                 Margin="30"   
+                Clicked="LogIn_LogInButton_Clicked"
+         />
 
     </Grid>
     
