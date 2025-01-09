@@ -52,7 +52,7 @@ public partial class TimeTablePage : ContentPage
 
     async void OnBackToMainMenuClicked(object? sender, EventArgs e)
     {
-        await Navigation.PopModalAsync();
+        await Navigation.PopAsync();
         //await Shell.Current.GoToAsync("/MainMenuPage");
 
     }

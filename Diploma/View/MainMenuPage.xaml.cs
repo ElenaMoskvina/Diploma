@@ -15,11 +15,10 @@ public partial class MainMenuPage : ContentPage
         InitializeComponent();
 
     }
-
-    async void Menu_ToLogInPageButtonClicked(object? sender, EventArgs e)
+    Си
     {
         //await Shell.Current.GoToAsync("/LogInPage");
-        await Navigation.PopModalAsync();
+        await Navigation.PopAsync();
     }
 
 

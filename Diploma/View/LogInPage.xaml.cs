@@ -16,10 +16,10 @@ public partial class LogInPage : ContentPage
         InitializeComponent();
        
     }
-    async void ToMainPage(object? sender, EventArgs e)
+    async void ToMainPage (object? sender, EventArgs e)
     {
        // await Shell.Current.GoToAsync("/MainPage");
-        await Navigation.PopModalAsync();
+        await Navigation.PopAsync();
     }
 
 

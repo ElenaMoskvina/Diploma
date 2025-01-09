@@ -22,9 +22,4 @@ public partial class CallPage : ContentPage
        // await Navigation.PopModalAsync();
 
     }
-
-
-
-
-
 }
