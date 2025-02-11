@@ -15,7 +15,7 @@ public partial class MainMenuPage : ContentPage
         InitializeComponent();
 
     }
-    Си
+    async void Menu_ToLogInPageButtonClicked(object? sender, EventArgs e)
     {
         //await Shell.Current.GoToAsync("/LogInPage");
         await Navigation.PopAsync();

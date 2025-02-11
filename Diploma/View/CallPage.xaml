@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-          
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+            xmlns:toolkits= "clr-namespace:CommunityToolkit.Maui.Core.Primitives;assembly=CommunityToolkit.Maui.MediaElement"
              x:Class="Diploma.View.CallPage"
              >
     <Grid>
@@ -31,9 +32,11 @@
         <BoxView BackgroundColor="Black" Grid.Column="4" Grid.Row="1" />
 
         <Image Source="call_page_label.png" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" VerticalOptions="Start" HeightRequest="100" Margin="100" />
-       
-        
-        
+
+        <toolkit:MediaElement x:Name="mediaElement"
+          Source="https://uralshooter.ru/adv/LoveRunsOut.mp3"                    
+        ShouldAutoPlay = "False"/>
+
         <Label Text="Talking App &#10;Входящий вызов"  
                FontSize="20" 
                TextColor="White"  
@@ -59,9 +62,29 @@
         <ImageButton x:Name="AcceptButton" Grid.Column="3" Grid.Row="1"
            HorizontalOptions="Fill" VerticalOptions ="Fill" 
            Source="accept_button.png"
-                      Margin="6"
-          
-        />
+           Clicked="AcceptCallButton"
+           Margin="6">
+            <ImageButton.Triggers>
+                <DataTrigger TargetType="ImageButton"
+                                 BindingContext="{x:Reference mediaElement}"
+                                 Binding="{Binding CurrentState}"
+                                 Value="{x:Static toolkits:MediaElementState.Playing}">
+                <Setter Property="IsEnabled" Value="False" />
+                    
+                    
+                </DataTrigger>
+                <DataTrigger TargetType="ImageButton"
+                                    BindingContext="{x:Reference mediaElement}"    
+                                    Binding="{Binding CurrentState}"
+                                    Value="{x:Static toolkits:MediaElementState.Buffering}">
+                    <Setter Property="IsEnabled"     Value="False" />
+                </DataTrigger>
+           </ImageButton.Triggers>
+
+        </ImageButton>
+
+
+      
 
     </Grid>
 </ContentPage>
