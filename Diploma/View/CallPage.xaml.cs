@@ -4,6 +4,10 @@ using CommunityToolkit.Maui;
 using CommunityToolkit.Maui.Views;
 using Microsoft.Maui;
 using CommunityToolkit.Maui.Core.Primitives;
+using System.Data;
+using System.Text;
+using Diploma.Models;
+
 
 
 
@@ -12,6 +16,9 @@ namespace Diploma.View;
 
 public partial class CallPage : ContentPage
 {
+    
+       
+    
     
     public CallPage()
 	{
@@ -34,15 +41,15 @@ public partial class CallPage : ContentPage
 
     }
 
-    private void AcceptCallButton(object? sender, EventArgs e)
+    private async void AcceptCallButton(object? sender, EventArgs e)
     {
         try
         {
             string srvrdbname = "Diploma";
-            string srvrname = " 192.168.1.58";
-            string srvrusername = "diplomauser";
+            string srvrname = "192.168.1.58";// ""192.168.56.1";
+            string srvrusername = "TalkingApp";
             string srvrpassword = "12345";
-            string CurrentExercise;
+            List<CallPageModel> callPageModel = new List<CallPageModel>();
 
             string sqlconn = $"Data Source={srvrname};Initial Catalog={srvrdbname};User ID={srvrusername};Password={srvrpassword}; TrustServerCertificate=True; Encrypt=False";
             SqlConnection sqlConnection = new SqlConnection(sqlconn);
@@ -51,16 +58,46 @@ public partial class CallPage : ContentPage
             string queryString = "Select ExerciseId, Audio from dbo.Exercise where ExerciseId = 1";
             SqlCommand command = new SqlCommand(queryString, sqlConnection);
             SqlDataReader reader = command.ExecuteReader();
+
+
+
             while (reader.Read())
             {
-                CurrentExercise = reader["Audio"].ToString();
-                
+                callPageModel.Add(new CallPageModel
+                {
+                    ExerciseId = Convert.ToInt32(reader["ExerciseID"]), //["Audio"].ToString();
+                    Audio = reader["Audio"].ToString(),
+
+                }
+            );
             }
+            
             reader.Close();
             sqlConnection.Close();
-        
+
             
+           
+            var audios = from c in callPageModel select c.Audio;
+
+            string trackUrl = callPageModel[0].Audio.ToString();
+                
+                
+
+           // Console.WriteLine( frist );
+
+            mediaElement.Source = trackUrl;
+
+
+            //MyCallPageView.ItemsSource = callPageModel;
+
+            if (mediaElement.CurrentState != MediaElementState.Playing)
+            {
+                mediaElement.Play();
+            }
+
+
         }
+
         catch (Exception ex)
         {
             Console.WriteLine(ex.Message);
@@ -69,18 +106,7 @@ public partial class CallPage : ContentPage
         
         }
 
-
-
-
-        if (mediaElement.CurrentState == MediaElementState.Stopped ||
-             mediaElement.CurrentState == MediaElementState.Paused)
-        {
-            mediaElement.Play();
-        }
-             else if (mediaElement.CurrentState == MediaElementState.Playing)
-        {
-            mediaElement.Pause();
-        }
+       
 
 
     }

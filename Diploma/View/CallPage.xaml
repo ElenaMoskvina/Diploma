@@ -33,11 +33,10 @@
 
         <Image Source="call_page_label.png" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" VerticalOptions="Start" HeightRequest="100" Margin="100" />
 
-        <toolkit:MediaElement x:Name="mediaElement"
-          Source="https://uralshooter.ru/adv/LoveRunsOut.mp3"                    
-        ShouldAutoPlay = "False"/>
+       
 
-        <Label Text="Talking App &#10;Входящий вызов"  
+        <Label 
+               Text="Talking App &#10;Входящий вызов"  
                FontSize="20" 
                TextColor="White"  
                Grid.Column="0" 
@@ -46,6 +45,20 @@
                HorizontalOptions ="Center" 
                VerticalOptions="Center"
                HorizontalTextAlignment = "Center"/>
+
+        <!--ListView Grid.Row="1" x:Name="MyCallPageView" HasUnevenRows="true" Footer="">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid RowDefinitions="Auto,Auto,Auto">
+                            <Label Grid.Row ="0" Text="{Binding Audio}" TextColor="White"></Label>
+                            <Label Grid.Row ="1" Text="{Binding Audio}" TextColor="White"> </Label>
+                         </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView> -->
+        
 
         <ImageButton x:Name="DeclineButton" Grid.Column="1" Grid.Row="1"
                 HorizontalOptions="Fill" VerticalOptions ="Fill" 
@@ -64,8 +77,8 @@
            Source="accept_button.png"
            Clicked="AcceptCallButton"
            Margin="6">
-            <ImageButton.Triggers>
-                <DataTrigger TargetType="ImageButton"
+            <!--ImageButton.Triggers>
+                <<DataTrigger TargetType="ImageButton"
                                  BindingContext="{x:Reference mediaElement}"
                                  Binding="{Binding CurrentState}"
                                  Value="{x:Static toolkits:MediaElementState.Playing}">
@@ -79,12 +92,13 @@
                                     Value="{x:Static toolkits:MediaElementState.Buffering}">
                     <Setter Property="IsEnabled"     Value="False" />
                 </DataTrigger>
-           </ImageButton.Triggers>
+           </ImageButton.Triggers> -->
 
         </ImageButton>
 
 
-      
-
+        <toolkit:MediaElement x:Name="mediaElement"   
+        ShouldAutoPlay = "False"/>
+        
     </Grid>
 </ContentPage>

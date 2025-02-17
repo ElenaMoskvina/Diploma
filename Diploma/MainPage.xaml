@@ -47,8 +47,9 @@
                 Margin="10"
                 BackgroundColor="White"
                 TextColor="#18436A"
-                FontSize="20"      />
-                  <!--Clicked = "OnScheduleClick"-->
+                FontSize="20"      
+                Clicked = "SingUpButtonClicked"/>
+                
           
             
          

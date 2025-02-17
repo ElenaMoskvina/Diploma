@@ -56,6 +56,16 @@ namespace Diploma
             
         }
 
+        private async void SingUpButtonClicked(object? sender, EventArgs e)
+        {
+
+
+            await Navigation.PushAsync(new SingUpPage(notificationManager));
+            // await Shell.Current.GoToAsync("/LogInPage(notificatoinManager)");
+
+        }
+
+       
 
 
 

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Diploma.View.SingUpPage"
+             Title="SingUpPage">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1.5*" />
+            <ColumnDefinition Width="6*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="1*"/>
+
+        </Grid.RowDefinitions>
+
+
+        <BoxView BackgroundColor="#4AA0AC" Grid.Column="0" Grid.Row="0" />
+        <BoxView BackgroundColor="#4AA0AC" Grid.Column="1" Grid.Row="0" />
+        <BoxView BackgroundColor="#4AA0AC" Grid.Column="2" Grid.Row="0" />
+        <BoxView BackgroundColor="#4AA0AC" Grid.Column="3" Grid.Row="0" />
+
+        <BoxView BackgroundColor="#4AA0AC" Grid.Column="0" Grid.Row="1" />
+        <BoxView BackgroundColor="White"  Grid.Column="1" Grid.Row="1"  />
+        <BoxView BackgroundColor="White" Grid.Column="2" Grid.Row="1" />
+        <BoxView BackgroundColor="#4AA0AC" Grid.Column="3" Grid.Row="1" />
+
+        <BoxView BackgroundColor="#C9E1DF" Grid.Column="0" Grid.Row="2" />
+        <BoxView BackgroundColor="White" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" />
+        <BoxView BackgroundColor="#C9E1DF" Grid.Column="3" Grid.Row="2" />
+
+
+        <BoxView BackgroundColor="#C9E1DF" Grid.Column="0" Grid.Row="3" />
+        <BoxView BackgroundColor="White" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" />
+        <BoxView BackgroundColor="#C9E1DF" Grid.Column="3" Grid.Row="3" />
+
+        <BoxView BackgroundColor="#C9E1DF" Grid.Column="0" Grid.Row="4" />
+        <BoxView BackgroundColor="White" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" />
+        <BoxView BackgroundColor="#C9E1DF" Grid.Column="3" Grid.Row="4" />
+
+        <BoxView BackgroundColor="#C9E1DF" Grid.Column="0" Grid.Row="6" />
+        <BoxView BackgroundColor="#C9E1DF" Grid.Column="1" Grid.Row="6" />
+        <BoxView BackgroundColor="#C9E1DF" Grid.Column="2" Grid.Row="6" />
+        <BoxView BackgroundColor="#C9E1DF" Grid.Column="3" Grid.Row="6" />
+        
+        
+        
+        <Button x:Name="SignUpPage_ToMainPageButton" Grid.Column="0" Grid.Row="0"
+            HeightRequest="40" WidthRequest="90"  
+            HorizontalOptions="Start" VerticalOptions ="Start" 
+            Text ="back" BackgroundColor="#4AA0AC" TextColor="White"
+            FontSize="12" Clicked="SignUpPage_ToMainPage"
+            />
+
+        <Button x:Name="SignUpPage_LogInSwitcher" Grid.Column="1" Grid.Row="1"
+             HeightRequest="40" WidthRequest="80"  
+             HorizontalOptions="Start" VerticalOptions ="Start" 
+             Text ="Log In" BackgroundColor="White" TextColor="#18436A"
+             FontSize="12" FontAttributes="Bold" 
+            />
+
+        <Button x:Name="SignUpPage_SignUpSwitcher" Grid.Column="2" Grid.Row="1"
+             HeightRequest="40" WidthRequest="80"  
+             HorizontalOptions="Start" VerticalOptions ="Start" 
+             Text ="Sign Up" BackgroundColor="White" TextColor="#18436A" 
+             FontSize="12" FontAttributes="None" 
+             />
+
+        <Frame CornerRadius="10" BackgroundColor="White" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2"
+       BorderColor="LightGray" HeightRequest="50" WidthRequest="270" Padding="10" 
+       VerticalOptions="Start">
+
+            <Entry x:Name="SignUpEmail"  Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2"
+             Placeholder="e-mail" HeightRequest="40"  TextChanged="EmailTextChanged">
+            </Entry>
+
+        </Frame>
+
+        <Frame CornerRadius="10" BackgroundColor="White" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2"
+       BorderColor="LightGray" HeightRequest="50" WidthRequest="270" Padding="10" 
+       VerticalOptions="Start">
+
+            <Entry x:Name="SignUpPassword"  Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2"
+             Placeholder="password"   HeightRequest="40"  IsPassword="True" TextChanged="PasswordTextChanged">
+            </Entry>
+
+        </Frame>
+
+        <Button x:Name="SignUp_To_MainMenu_Button" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2"
+         HorizontalOptions="Fill" VerticalOptions ="End" 
+         Text ="Sign Up" BackgroundColor="#4AA0AC" TextColor="White"
+         Margin="30"   
+        Clicked="SignUp_To_MainMenu_Button_Clicked"
+ />
+
+    </Grid>
+
+</ContentPage>

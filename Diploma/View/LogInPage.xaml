@@ -15,10 +15,14 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
-                <RowDefinition Height="8*" />
                 <RowDefinition Height="1*"/>
-               
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="1*"/>
+             
         </Grid.RowDefinitions>
+            
+            
             <BoxView BackgroundColor="#4AA0AC" Grid.Column="0" Grid.Row="0" />
             <BoxView BackgroundColor="#4AA0AC" Grid.Column="1" Grid.Row="0" />
             <BoxView BackgroundColor="#4AA0AC" Grid.Column="2" Grid.Row="0" />
@@ -30,14 +34,22 @@
             <BoxView BackgroundColor="#4AA0AC" Grid.Column="3" Grid.Row="1" />
 
             <BoxView BackgroundColor="#C9E1DF" Grid.Column="0" Grid.Row="2" />
-            <BoxView BackgroundColor="White" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" />
-            
+            <BoxView BackgroundColor="White" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" />          
             <BoxView BackgroundColor="#C9E1DF" Grid.Column="3" Grid.Row="2" />
 
-            <BoxView BackgroundColor="#C9E1DF" Grid.Column="0" Grid.Row="3" />
-            <BoxView BackgroundColor="#C9E1DF" Grid.Column="1" Grid.Row="3" />
-            <BoxView BackgroundColor="#C9E1DF" Grid.Column="2" Grid.Row="3" />
-            <BoxView BackgroundColor="#C9E1DF" Grid.Column="3" Grid.Row="3" />
+
+        <BoxView BackgroundColor="#C9E1DF" Grid.Column="0" Grid.Row="3" />
+        <BoxView BackgroundColor="White" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" />
+        <BoxView BackgroundColor="#C9E1DF" Grid.Column="3" Grid.Row="3" />
+
+        <BoxView BackgroundColor="#C9E1DF" Grid.Column="0" Grid.Row="4" />
+        <BoxView BackgroundColor="White" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" />
+        <BoxView BackgroundColor="#C9E1DF" Grid.Column="3" Grid.Row="4" />
+
+        <BoxView BackgroundColor="#C9E1DF" Grid.Column="0" Grid.Row="6" />
+            <BoxView BackgroundColor="#C9E1DF" Grid.Column="1" Grid.Row="6" />
+            <BoxView BackgroundColor="#C9E1DF" Grid.Column="2" Grid.Row="6" />
+            <BoxView BackgroundColor="#C9E1DF" Grid.Column="3" Grid.Row="6" />
 
 
 
@@ -62,7 +74,27 @@
              FontSize="12" FontAttributes="None" 
           />
 
-        <Button x:Name="LogIn_LogInButton" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2"
+        <Frame CornerRadius="10" BackgroundColor="White" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2"
+               BorderColor="LightGray" HeightRequest="50" WidthRequest="270" Padding="10" 
+               VerticalOptions="Start">
+
+                <Entry x:Name="LogInEmail"  Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2"
+                     Placeholder="e-mail" HeightRequest="40"  TextChanged="EmailTextChanged">    
+                </Entry>           
+            
+        </Frame>
+
+        <Frame CornerRadius="10" BackgroundColor="White" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2"
+               BorderColor="LightGray" HeightRequest="50" WidthRequest="270" Padding="10" 
+               VerticalOptions="Start">
+
+            <Entry x:Name="LogInPassword"  Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2"
+                     Placeholder="password"   HeightRequest="40"  IsPassword="True" TextChanged="PasswordTextChanged">
+            </Entry>
+
+        </Frame>
+
+        <Button x:Name="LogIn_LogInButton" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2"
                  HorizontalOptions="Fill" VerticalOptions ="End" 
                  Text ="Log In" BackgroundColor="#4AA0AC" TextColor="White"
                  Margin="30"   
