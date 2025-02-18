@@ -12,14 +12,5 @@ namespace Diploma.ViewModel
     internal class LogInPageViewModel
     {
 
-       
-        
-      
-        
-
-
-        //callPageModel[0].Audio.ToString();
-
-
     }
 }
