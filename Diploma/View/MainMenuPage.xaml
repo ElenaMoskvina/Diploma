@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:toolkits= "clr-namespace:CommunityToolkit.Maui.Core.Primitives;assembly=CommunityToolkit.Maui.MediaElement"
              x:Class="Diploma.View.MainMenuPage"
              >
     <Grid>
@@ -84,11 +86,13 @@
         HorizontalOptions="Fill" VerticalOptions ="Fill" Margin="12"
         Text ="Talk now!" BackgroundColor="White" TextColor="#4AA0AC" FontAttributes="Bold"
         FontSize="15" CornerRadius="0" Clicked="Menu_ToCallPage"
+                
+                
  />
 
     </Grid>
 
-
+  
 
 
 

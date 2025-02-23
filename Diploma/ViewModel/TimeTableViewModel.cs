@@ -11,13 +11,14 @@ using Diploma.Models;
 using static Microsoft.Maui.Controls.PlatformConfiguration.Android;
 
 
+
 namespace Diploma.ViewModel
 {
     class TimeTableViewModel
 
     {
-       
 
+        
 
 
 

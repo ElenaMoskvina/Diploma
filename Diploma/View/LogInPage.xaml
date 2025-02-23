@@ -60,6 +60,9 @@
                     FontSize="12" Clicked="ToMainPage"
          />
 
+        
+    
+
         <Button x:Name="LogInSwitcher" Grid.Column="1" Grid.Row="1"
              HeightRequest="40" WidthRequest="80"  
              HorizontalOptions="Start" VerticalOptions ="Start" 

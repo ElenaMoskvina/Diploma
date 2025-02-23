@@ -33,8 +33,11 @@
 
         <Image Source="call_page_label.png" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" VerticalOptions="Start" HeightRequest="100" Margin="100" />
 
-       
+       <toolkit:MediaElement x:Name="incomingCall"  Source ="embed://pressure.mp3" ShouldKeepScreenOn="False" BackgroundColor="Black" ShouldAutoPlay = "True"/>
 
+        <toolkit:MediaElement x:Name="mediaElement"   ShouldKeepScreenOn="False" BackgroundColor="Black" ShouldAutoPlay = "False" ShouldShowPlaybackControls="False"/>
+        
+        
         <Label 
                Text="Talking App &#10;Входящий вызов"  
                FontSize="20" 
@@ -96,9 +99,14 @@
 
         </ImageButton>
 
-
-        <toolkit:MediaElement x:Name="mediaElement"   
-        ShouldAutoPlay = "False"/>
         
+
+        
+
+
+      
+        
+ 
+
     </Grid>
 </ContentPage>

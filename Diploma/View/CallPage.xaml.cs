@@ -23,7 +23,11 @@ public partial class CallPage : ContentPage
     public CallPage()
 	{
 		InitializeComponent();
+
+
         
+
+
     }
 
 
@@ -31,13 +35,18 @@ public partial class CallPage : ContentPage
     async void CallPage_ToMainMenuPage(object? sender, EventArgs e)
     {
 
+        
+        incomingCall.Stop();
+       
+
         mediaElement.Stop();
 
         await Shell.Current.GoToAsync("/MainPage");
         // await Navigation.PopModalAsync();
 
-           
-       
+        
+
+
 
     }
 
@@ -45,9 +54,9 @@ public partial class CallPage : ContentPage
     {
         try
         {
-            string srvrdbname = "Diploma";
-            string srvrname = "192.168.1.58";// ""192.168.56.1";
-            string srvrusername = "TalkingApp";
+            string srvrdbname = "TalkingApp";
+            string srvrname =  "192.168.56.1"; //"192.168.1.58\";//
+            string srvrusername = "diplomauser";
             string srvrpassword = "12345";
             List<CallPageModel> callPageModel = new List<CallPageModel>();
 
@@ -55,7 +64,7 @@ public partial class CallPage : ContentPage
             SqlConnection sqlConnection = new SqlConnection(sqlconn);
 
             sqlConnection.Open();
-            string queryString = "Select ExerciseId, Audio from dbo.Exercise where ExerciseId = 1";
+            string queryString = "Select ExerciseId, Audio from dbo.Exercise where ExerciseId = 3";
             SqlCommand command = new SqlCommand(queryString, sqlConnection);
             SqlDataReader reader = command.ExecuteReader();
 
@@ -90,12 +99,14 @@ public partial class CallPage : ContentPage
 
             //MyCallPageView.ItemsSource = callPageModel;
 
+            incomingCall.Stop();
+
             if (mediaElement.CurrentState != MediaElementState.Playing)
             {
                 mediaElement.Play();
             }
 
-
+           
         }
 
         catch (Exception ex)

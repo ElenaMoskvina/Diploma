@@ -55,7 +55,7 @@ public partial class SingUpPage : ContentPage
             string password = newUserPassword.ToString();
 
             string srvrdbname = "TalkingApp";
-            string srvrname = "192.168.1.58";// ""192.168.56.1";
+            string srvrname = "192.168.56.1"; //"192.168.1.58";//
             string srvrusername = "diplomauser";
             string srvrpassword = "12345";
 

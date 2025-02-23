@@ -4,29 +4,129 @@
              xmlns:views="clr-namespace:Diploma.View"
              x:Class="Diploma.View.TimeTablePage"
              Title="TimeTablePage">
-    <VerticalStackLayout>
-        <DatePicker x:Name="datePicker"
-                 
-                    MinimumDate="2025,1,1"
-                    />
-        <TimePicker x:Name="timePicker"
-                    
-                    
-            
-            />
-        <Label x:Name="CurrentTimeLabel"
-                       
-            
-            />
+   
 
-            <Button x:Name="BackToMainMenu"
-                    Text="Back to menu"
-                Clicked="OnBackToMainMenuClicked"
-               />
 
-        <Button x:Name="StartTimer"
-                Text="Start timer"
-                Clicked="OnTimerClicked"
-   />
-    </VerticalStackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.7*" />
+                <ColumnDefinition Width="3.75*" />
+                <ColumnDefinition Width="3.75*" />
+                <ColumnDefinition Width="0.7*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.7*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                
+                <RowDefinition Height="0.4*"/>
+
+            </Grid.RowDefinitions>
+
+
+            <BoxView BackgroundColor="#4AA0AC" Grid.Column="0" Grid.Row="0" />
+            <BoxView BackgroundColor="#4AA0AC" Grid.Column="1" Grid.Row="0" />
+            <BoxView BackgroundColor="#4AA0AC" Grid.Column="2" Grid.Row="0" />
+            <BoxView BackgroundColor="#4AA0AC" Grid.Column="3" Grid.Row="0" />
+
+            <BoxView BackgroundColor="#4AA0AC" Grid.Column="0" Grid.Row="1" />
+            <BoxView BackgroundColor="White"  Grid.Column="1" Grid.Row="1"  />
+            <BoxView BackgroundColor="White" Grid.Column="2" Grid.Row="1" />
+            <BoxView BackgroundColor="#4AA0AC" Grid.Column="3" Grid.Row="1" />
+
+            <BoxView BackgroundColor="#C9E1DF" Grid.Column="0" Grid.Row="2" />
+            <BoxView BackgroundColor="White" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" />
+            <BoxView BackgroundColor="#C9E1DF" Grid.Column="3" Grid.Row="2" />
+
+
+            <BoxView BackgroundColor="#C9E1DF" Grid.Column="0" Grid.Row="3" />
+            <BoxView BackgroundColor="White" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" />
+            <BoxView BackgroundColor="#C9E1DF" Grid.Column="3" Grid.Row="3" />
+
+            <BoxView BackgroundColor="#C9E1DF" Grid.Column="0" Grid.Row="4" />
+            <BoxView BackgroundColor="White" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" />
+            <BoxView BackgroundColor="#C9E1DF" Grid.Column="3" Grid.Row="4" />
+            
+            
+             <BoxView BackgroundColor="#C9E1DF" Grid.Column="0" Grid.Row="5" />
+             <BoxView BackgroundColor="White" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" />
+             <BoxView BackgroundColor="#C9E1DF" Grid.Column="3" Grid.Row="5" />
+
+            <BoxView BackgroundColor="#C9E1DF" Grid.Column="0" Grid.Row="6" />
+            <BoxView BackgroundColor="White" Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="2" />
+            <BoxView BackgroundColor="#C9E1DF" Grid.Column="3" Grid.Row="6" />
+
+            <BoxView BackgroundColor="#C9E1DF" Grid.Column="0" Grid.Row="7" />
+            <BoxView BackgroundColor="White" Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="2" />
+             <BoxView BackgroundColor="#C9E1DF" Grid.Column="3" Grid.Row="7" />
+            
+            <BoxView BackgroundColor="#C9E1DF" Grid.Column="0" Grid.Row="8" />
+            <BoxView BackgroundColor="#C9E1DF" Grid.Column="1" Grid.Row="8" />
+            <BoxView BackgroundColor="#C9E1DF" Grid.Column="2" Grid.Row="8" />
+            <BoxView BackgroundColor="#C9E1DF" Grid.Column="3" Grid.Row="8" />
+
+        
+            
+        <Button x:Name="BackToMainMenu" Grid.Column="0" Grid.Row="0"
+            HeightRequest="40" WidthRequest="90"  
+            HorizontalOptions="Start" VerticalOptions ="Start" 
+            Text ="back" BackgroundColor="#4AA0AC" TextColor="White"
+            Clicked="OnBackToMainMenuClicked">
+        </Button>
+
+
+        <Label
+        Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3"
+        Text="Time Table" TextColor="White" FontSize="18" FontAttributes ="Bold"
+        HorizontalOptions="Start" VerticalOptions ="End" 
+        Margin="12">
+            
+        </Label>
+
+
+        <Label  Text ="Time settings" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan ="4" VerticalOptions="Center" Margin="5"  FontSize="20" HorizontalOptions="Center" TextColor ="#18436A"
+           
+           ></Label>
+
+
+        <Label  Text ="Select exercise date" Grid.Column="1" Grid.Row="2" VerticalOptions="Center" Margin="5"></Label>
+        <Frame Grid.Column="2" Grid.Row="2" MaximumHeightRequest="85" Margin="5">
+            <DatePicker x:Name="datePicker" MaximumHeightRequest="75" DateSelected ="OnDateChanged"></DatePicker>
+        </Frame>
+
+     
+
+
+        <Label  Text ="Select exercise time"  Grid.Column="1" Grid.Row="3" VerticalOptions="Center" Margin="5"></Label>
+        <Frame Grid.Column="2" Grid.Row="3"  MaximumHeightRequest="85" Margin="5">
+            <TimePicker x:Name="timePicker"   MaximumHeightRequest="75" PropertyChanged="OnTimeChanged"></TimePicker>
+           
+        </Frame>
+
+
+        <Label  Text ="Next Exercise Time" Grid.Column="1" Grid.Row="4" VerticalOptions="Center" Margin="5" >
+        </Label>
+        <Frame Grid.Column="2" Grid.Row="4" MaximumHeightRequest="85" Margin="5">
+            <Label x:Name="ExerciseTimeLabel" MaximumHeightRequest="75"></Label>
+         </Frame>
+
+
+        <Button x:Name="ConfirmTimeTable"
+                Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" MaximumHeightRequest="80"
+                Text="Confirm Time Table" BackgroundColor="#4AA0AC" TextColor="White"
+                Clicked="OnTimerClicked"  Margin="10"   />
+
+
+
+
+
+
+    </Grid>
+
+       
+   
 </ContentPage>

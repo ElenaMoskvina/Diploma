@@ -3,6 +3,8 @@ using Android.Content;
 using Android.OS;
 using AndroidX.Core.App;
 using Diploma.View;
+using Microsoft.Maui.Controls;
+using Xamarin.Google.Crypto.Tink.Shaded.Protobuf;
 
 namespace Diploma.Platforms.Android;
 
@@ -15,6 +17,8 @@ public class NotificationManagerService : INotificationManagerService
     bool channelInitialized = false;
     int messageId = 0;
     int pendingIntentId = 0;
+
+   
 
     NotificationManagerCompat compatManager;
 
@@ -45,23 +49,26 @@ public class NotificationManagerService : INotificationManagerService
                 : PendingIntentFlags.CancelCurrent;
 
             PendingIntent pendingIntent = PendingIntent.GetBroadcast(Platform.AppContext, pendingIntentId++, intent, pendingIntentFlags);
-            long interval = 10 * 1000;
+            
             AlarmManager alarmManager = Platform.AppContext.GetSystemService(Context.AlarmService) as AlarmManager;
-            alarmManager.Set(AlarmType.ElapsedRealtimeWakeup, SystemClock.ElapsedRealtime()+interval, pendingIntent);
+
+            long triggerTime = GetNotifyTime(notifyTime.Value);
+            alarmManager.Set(AlarmType.RtcWakeup, triggerTime, pendingIntent);
         }
         else
         {
            
         }
+
+        long GetNotifyTime(DateTime notifyTime)
+        {
+            DateTime utcTime = TimeZoneInfo.ConvertTimeToUtc(notifyTime);
+            double epochDiff = (new DateTime(1970, 1, 1) - DateTime.MinValue).TotalSeconds;
+            long utcAlarmTime = utcTime.AddSeconds(-epochDiff).Ticks / 10000;
+            return utcAlarmTime; // milliseconds
+        }
     }
 
       
 
-    //long GetNotifyTime(DateTime notifyTime)
-    //{
-    //    DateTime utcTime = TimeZoneInfo.ConvertTimeToUtc(notifyTime);
-    //    double epochDiff = (new DateTime(1970, 1, 1) - DateTime.MinValue).TotalSeconds;
-    //    long utcAlarmTime = utcTime.AddSeconds(-epochDiff).Ticks / 10000;
-    //    return utcAlarmTime; // milliseconds
-    //}
 }

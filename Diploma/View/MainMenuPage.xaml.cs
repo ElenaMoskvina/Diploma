@@ -1,5 +1,7 @@
 
 
+using CommunityToolkit.Maui.Core.Primitives;
+
 namespace Diploma.View;
 
 public partial class MainMenuPage : ContentPage
@@ -31,6 +33,9 @@ public partial class MainMenuPage : ContentPage
 
        await Shell.Current.GoToAsync("/CallPage");
         //await Navigation.PushAsync(new CallPage(notificationManager));
+       
+       
+
     }
 
 

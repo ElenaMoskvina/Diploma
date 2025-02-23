@@ -1,6 +1,6 @@
-﻿namespace Diploma
-{
-    public class NotificationManagerService
-    {
-    }
-}
+﻿//namespace Diploma
+//{
+//    public class NotificationManagerService
+//    {
+//    }
+//}
