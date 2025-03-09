@@ -32,7 +32,7 @@ public partial class CallPage : ContentPage
 
 
 
-    async void CallPage_ToMainMenuPage(object? sender, EventArgs e)
+    async void CallPage_To_MainPage_ButtonClicked(object? sender, EventArgs e)
     {
 
         
@@ -55,7 +55,7 @@ public partial class CallPage : ContentPage
         try
         {
             string srvrdbname = "TalkingApp";
-            string srvrname =  "192.168.56.1"; //"192.168.1.58\";//
+            string srvrname = "192.168.56.1"; //"46.48.55.13,80"; //"192.168.1.58";//"192.168.56.1"; //
             string srvrusername = "diplomauser";
             string srvrpassword = "12345";
             List<CallPageModel> callPageModel = new List<CallPageModel>();

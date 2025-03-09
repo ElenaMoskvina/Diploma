@@ -20,7 +20,7 @@ public partial class SingUpPage : ContentPage
     {
         InitializeComponent();
     }
-    async void SignUpPage_ToMainPage(object? sender, EventArgs e)
+    async void SignUpPage_To_MainPage_ButtonClicked(object? sender, EventArgs e)
     {
         // await Shell.Current.GoToAsync("/MainPage");
         await Navigation.PopAsync();
@@ -55,7 +55,7 @@ public partial class SingUpPage : ContentPage
             string password = newUserPassword.ToString();
 
             string srvrdbname = "TalkingApp";
-            string srvrname = "192.168.56.1"; //"192.168.1.58";//
+            string srvrname = "192.168.56.1"; //"192.168.56.1"; //"46.48.55.13,80"; //"192.168.1.58";//"192.168.56.1"; //
             string srvrusername = "diplomauser";
             string srvrpassword = "12345";
 

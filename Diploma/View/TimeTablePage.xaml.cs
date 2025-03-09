@@ -28,7 +28,7 @@ public partial class TimeTablePage : ContentPage
     int notificationNumber = 0;
   
     static string srvrdbname = "TalkingApp";
-    static string srvrname = "192.168.56.1"; //"192.168.1.58";//
+    static string srvrname = "192.168.56.1"; //"46.48.55.13,80"; //"192.168.1.58";//"192.168.56.1"; //
     static string srvrusername = "diplomauser";
     static string srvrpassword = "12345";
     static string sqlconn = $"Data Source={srvrname};Initial Catalog={srvrdbname};User ID={srvrusername};Password={srvrpassword}; TrustServerCertificate=True; Encrypt=False";
@@ -220,7 +220,7 @@ public partial class TimeTablePage : ContentPage
 
 
     }
-    async void OnBackToMainMenuClicked(object? sender, EventArgs e)
+    async void TimeTable_To_Menu_ButtonCliked(object? sender, EventArgs e)
     {
         await Navigation.PopAsync();
         //await Shell.Current.GoToAsync("/MainMenuPage");

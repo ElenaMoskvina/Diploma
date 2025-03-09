@@ -37,7 +37,7 @@
           HeightRequest="40" WidthRequest="90"  
           HorizontalOptions="Start" VerticalOptions ="Start" 
           Text ="back" BackgroundColor="#4AA0AC" TextColor="White"
-          FontSize="12" Clicked="Menu_ToLogInPageButtonClicked"
+          FontSize="12" Clicked="Menu_To_LogInPage_ButtonClicked"
           />
         <Label
             Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"
@@ -46,11 +46,10 @@
             Margin="12"
             />
 
-        <ImageButton x:Name="LessonsForTodayButton" Grid.Column="0" Grid.Row="1" 
-                 
-         HorizontalOptions="FillAndExpand" VerticalOptions ="FillAndExpand" Margin="12" Aspect="Fill"
-         BackgroundColor="White" Source="lessons_for_today_picture.png" BorderColor="White"
-            CornerRadius="0"
+        <Button x:Name="LessonsForTodayButton" Grid.Column="0" Grid.Row="1" 
+         HorizontalOptions="Fill" VerticalOptions ="Fill" Margin="12"
+        Text ="Lessons for Today" BackgroundColor="White" TextColor="Black"
+        FontSize="12" CornerRadius="0"
                 />
 
         <Button x:Name="LessonRecordingsButton" Grid.Column="1" Grid.Row="1"
@@ -62,7 +61,7 @@
         <Button x:Name="TimeTableButton" Grid.Column="0" Grid.Row="2"
          HorizontalOptions="Fill" VerticalOptions ="Fill" Margin="12"
          Text ="Time table" BackgroundColor="White" TextColor="Black"
-         FontSize="12" CornerRadius="0" Clicked="OnTimeTableClicked"
+         FontSize="12" CornerRadius="0" Clicked="Menu_To_TimeTable_ButtonClicked"
          />
 
         <Button x:Name="TopicsButton" Grid.Column="1" Grid.Row="2"
@@ -85,7 +84,7 @@
         <Button x:Name="TalkNowButton" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2"
         HorizontalOptions="Fill" VerticalOptions ="Fill" Margin="12"
         Text ="Talk now!" BackgroundColor="White" TextColor="#4AA0AC" FontAttributes="Bold"
-        FontSize="15" CornerRadius="0" Clicked="Menu_ToCallPage"
+        FontSize="15" CornerRadius="0" Clicked="Menu_To_CallPage_ButtonClicked"
                 
                 
  />

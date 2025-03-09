@@ -1,28 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Diploma.Models.TimeTableModel">
-    <Position X="14.75" Y="7" Width="2.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEAAAIAAAA=</HashCode>
-      <FileName>Models\TimeTableModel.cs</FileName>
-    </TypeIdentifier>
-  </Class>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
   <Class Name="Diploma.Platforms.Android.AlarmReceiver">
-    <Position X="4.25" Y="0.5" Width="1.5" />
+    <Position X="22.5" Y="6" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Platforms\Android\AlarmReceiver.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Diploma.Platforms.Android.BootReceiver">
-    <Position X="9.5" Y="0.5" Width="1.5" />
+    <Position X="25.5" Y="6" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Platforms\Android\BootReceiver.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Diploma.Platforms.Android.NotificationManagerService" BaseTypeListCollapsed="true">
-    <Position X="7.75" Y="5.75" Width="2.5" />
+    <Position X="16" Y="7.25" Width="3.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAACAAAAAIAAAAFAAAAAEAIAQAAAQAAABAAAAAA=</HashCode>
       <FileName>Platforms\Android\NotificationManagerService.cs</FileName>
@@ -30,112 +23,126 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="Diploma.Platforms.Android.NotificationPermission">
-    <Position X="11.25" Y="5.75" Width="3" />
+    <Position X="22.25" Y="2.5" Width="3" />
     <TypeIdentifier>
       <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Platforms\Android\NotificationPermission.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Diploma.MainActivity">
-    <Position X="5.75" Y="3" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Platforms\Android\MainActivity.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Diploma.MainApplication">
-    <Position X="7.5" Y="3" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Platforms\Android\MainApplication.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Diploma.App">
-    <Position X="6" Y="0.5" Width="1.5" />
+    <Position X="3.25" Y="3.5" Width="1.5" />
+    <InheritanceLine Type="Microsoft.Maui.Controls.Application" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="4" Y="2.941" />
+        <Point X="4" Y="3.125" />
+        <Point X="4" Y="3.125" />
+        <Point X="4" Y="3.5" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>App.xaml.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Diploma.AppShell">
-    <Position X="7.75" Y="0.5" Width="1.5" />
+    <Position X="5.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
       <FileName>AppShell.xaml.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Diploma.MainPage">
-    <Position X="12" Y="3" Width="2.75" />
+    <Position X="11.25" Y="0.5" Width="3.75" />
+    <InheritanceLine Type="Microsoft.Maui.Controls.ContentPage" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.875" Y="5.75" />
+        <Point X="8.875" Y="5.375" />
+        <Point X="10.875" Y="5.375" />
+        <Point X="10.875" Y="1.75" />
+        <Point X="11.25" Y="1.75" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAgAAAAAAABAAAAAAAAAAABAAAAAAAACAAA=</HashCode>
+      <HashCode>AAAAAAAAAAgAAAAAAABAAAAAAAAAAABAAACAAAACAAA=</HashCode>
       <FileName>MainPage.xaml.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Diploma.MauiProgram">
-    <Position X="4.25" Y="5.75" Width="1.5" />
+    <Position X="16" Y="0.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MauiProgram.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Diploma.NotificationEventArgs">
-    <Position X="6" Y="5.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
-      <FileName>NotificationEventArgs.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Diploma.View.CallPage">
-    <Position X="11.25" Y="0.5" Width="2.5" />
+    <Position X="7" Y="12" Width="3.75" />
+    <InheritanceLine Type="Microsoft.Maui.Controls.ContentPage" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.875" Y="9.04" />
+        <Point X="8.875" Y="12" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
       <FileName>View\CallPage.xaml.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Diploma.View.LogInPage">
-    <Position X="3" Y="3" Width="2.25" />
+    <Position X="11.25" Y="6.25" Width="3.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAIAAAAABAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAIAABAAAAABAEAAAACAAABAgAAAAAAAAAAE=</HashCode>
       <FileName>View\LogInPage.xaml.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Diploma.View.MainMenuPage">
-    <Position X="9.5" Y="3" Width="2.25" />
+    <Position X="11.25" Y="9.5" Width="3.75" />
+    <InheritanceLine Type="Microsoft.Maui.Controls.ContentPage" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.875" Y="9.04" />
+        <Point X="8.875" Y="10.625" />
+        <Point X="11.25" Y="10.625" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAIAAAAAABAAAAAAAAAAAAABAAAAABAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAIBAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\MainMenuPage.xaml.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Diploma.View.TimeTablePage">
-    <Position X="17.5" Y="6.75" Width="3" />
+    <Position X="11.25" Y="12" Width="3.75" />
+    <InheritanceLine Type="Microsoft.Maui.Controls.ContentPage" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.875" Y="9.04" />
+        <Point X="8.875" Y="11.75" />
+        <Point X="11" Y="11.75" />
+        <Point X="11" Y="14.25" />
+        <Point X="11.25" Y="14.25" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAgAAAAAAABAAAAAAAIAAABAAAgAAAAAAAA=</HashCode>
+      <HashCode>AAIAAAAAACgAwAAAAAhAAAACQAIAEABAAAAAAAAAAAA=</HashCode>
       <FileName>View\TimeTablePage.xaml.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="System.Object" Collapsed="true">
-    <Position X="15.25" Y="4.5" Width="1.5" />
+  <Class Name="System.Object">
+    <Position X="16" Y="2.75" Width="2.25" />
     <TypeIdentifier />
   </Class>
   <Class Name="Android.Content.BroadcastReceiver" Collapsed="true">
-    <Position X="1.25" Y="0.75" Width="1.5" />
+    <Position X="22.75" Y="4.25" Width="2.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="Microsoft.Maui.Controls.Application" Collapsed="true">
-    <Position X="14.25" Y="1" Width="1.5" />
+    <Position X="3.25" Y="2.25" Width="1.5" />
     <TypeIdentifier />
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Microsoft.Maui.Controls.ContentPage" Collapsed="true">
-    <Position X="16.75" Y="2" Width="1.5" />
-    <TypeIdentifier />
-  </Class>
-  <Class Name="System.EventArgs" Collapsed="true">
-    <Position X="1.25" Y="2.25" Width="1.5" />
+  <Class Name="Microsoft.Maui.Controls.ContentPage">
+    <Position X="7.25" Y="5.75" Width="3.25" />
     <TypeIdentifier />
   </Class>
   <Class Name="Microsoft.Maui.ApplicationModel.Permissions" Collapsed="true">
-    <Position X="18.25" Y="5.5" Width="1.5" />
+    <Position X="23" Y="0.75" Width="1.5" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
@@ -144,9 +151,6 @@
         <TypeIdentifier />
       </Class>
       <Class Name="Microsoft.Maui.ApplicationModel.Permissions.StorageRead" Collapsed="true">
-        <TypeIdentifier />
-      </Class>
-      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.Bluetooth" Collapsed="true">
         <TypeIdentifier />
       </Class>
       <Class Name="Microsoft.Maui.ApplicationModel.Permissions.CalendarRead" Collapsed="true">
@@ -197,7 +201,7 @@
       <Class Name="Microsoft.Maui.ApplicationModel.Permissions.PhotosAddOnly" Collapsed="true">
         <TypeIdentifier />
       </Class>
-      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.BasePlatformPermission" Collapsed="true">
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.Bluetooth" Collapsed="true">
         <TypeIdentifier />
       </Class>
       <Class Name="Microsoft.Maui.ApplicationModel.Permissions.Camera" Collapsed="true">
@@ -224,6 +228,9 @@
       <Class Name="Microsoft.Maui.ApplicationModel.Permissions.LaunchApp" Collapsed="true">
         <TypeIdentifier />
       </Class>
+      <Class Name="Microsoft.Maui.ApplicationModel.Permissions.BasePlatformPermission" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
       <Class Name="Microsoft.Maui.ApplicationModel.Permissions.Speech" Collapsed="true">
         <TypeIdentifier />
       </Class>
@@ -233,8 +240,81 @@
     </NestedTypes>
     <TypeIdentifier />
   </Class>
+  <Class Name="Diploma.View.SingUpPage">
+    <Position X="11.25" Y="3.25" Width="3.75" />
+    <InheritanceLine Type="Microsoft.Maui.Controls.ContentPage" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.875" Y="5.75" />
+        <Point X="8.875" Y="4.875" />
+        <Point X="10.792" Y="4.875" Type="JumpStart" />
+        <Point X="10.958" Y="4.875" Type="JumpEnd" />
+        <Point X="11.25" Y="4.875" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAABAEAAAAAAAAAIAAAAABgAAAAE=</HashCode>
+      <FileName>View\SingUpPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.Maui.Controls.Shell" Collapsed="true">
+    <Position X="5.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Microsoft.Maui.Controls.TemplatedPage" Collapsed="true">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Microsoft.Maui.Controls.Page" Collapsed="true">
+    <Position X="8" Y="2.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Diploma.Models.CallPageModel">
+    <Position X="20" Y="5.25" Width="1.75" />
+    <InheritanceLine Type="System.Object" ManuallyRouted="true">
+      <Path>
+        <Point X="17.125" Y="5.2" />
+        <Point X="17.125" Y="5.898" />
+        <Point X="20" Y="5.898" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CallPageModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.LogInPageModel">
+    <Position X="20" Y="3.5" Width="1.75" />
+    <InheritanceLine Type="System.Object" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.25" Y="3.938" />
+        <Point X="18.625" Y="3.938" />
+        <Point X="18.625" Y="4.125" />
+        <Point X="20" Y="4.125" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\LogInPageModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.SignUpPageModel">
+    <Position X="20" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAgAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\SignUpPageModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.TimeTablePageModel">
+    <Position X="20" Y="7" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAkAAAAAAAAAAAAAgAAAAAAAAQAAAAAAAAiAAAAAAA=</HashCode>
+      <FileName>Models\TimeTablePageModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Interface Name="Diploma.INotificationManagerService">
-    <Position X="11.75" Y="7.5" Width="2.25" />
+    <Position X="22.75" Y="7.75" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAABAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>NotificationManagerService.cs</FileName>

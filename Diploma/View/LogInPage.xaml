@@ -57,7 +57,7 @@
                     HeightRequest="40" WidthRequest="90"  
                     HorizontalOptions="Start" VerticalOptions ="Start" 
                     Text ="back" BackgroundColor="#4AA0AC" TextColor="White"
-                    FontSize="12" Clicked="ToMainPage"
+                    FontSize="12" Clicked="LogIn_To_MainPage_ButtonClicked"
          />
 
         
@@ -101,7 +101,7 @@
                  HorizontalOptions="Fill" VerticalOptions ="End" 
                  Text ="Log In" BackgroundColor="#4AA0AC" TextColor="White"
                  Margin="30"   
-                Clicked="LogIn_LogInButton_Clicked"
+                Clicked="LogIn_To_MainMenu_ButtonClicked"
          />
 
     </Grid>

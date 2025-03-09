@@ -17,18 +17,18 @@ public partial class MainMenuPage : ContentPage
         InitializeComponent();
 
     }
-    async void Menu_ToLogInPageButtonClicked(object? sender, EventArgs e)
+    async void Menu_To_LogInPage_ButtonClicked(object? sender, EventArgs e)
     {
         //await Shell.Current.GoToAsync("/LogInPage");
         await Navigation.PopAsync();
     }
 
 
-    private async void OnTimeTableClicked(object? sender, EventArgs e)
+    private async void Menu_To_TimeTable_ButtonClicked(object? sender, EventArgs e)
     {
         await Navigation.PushAsync(new TimeTablePage(notificationManager));
     }
-    private async void Menu_ToCallPage(object? sender, EventArgs e)
+    private async void Menu_To_CallPage_ButtonClicked(object? sender, EventArgs e)
     {
 
        await Shell.Current.GoToAsync("/CallPage");

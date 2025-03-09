@@ -55,7 +55,7 @@
             HeightRequest="40" WidthRequest="90"  
             HorizontalOptions="Start" VerticalOptions ="Start" 
             Text ="back" BackgroundColor="#4AA0AC" TextColor="White"
-            FontSize="12" Clicked="SignUpPage_ToMainPage"
+            FontSize="12" Clicked="SignUpPage_To_MainPage_ButtonClicked"
             />
 
         <Button x:Name="SignUpPage_LogInSwitcher" Grid.Column="1" Grid.Row="1"

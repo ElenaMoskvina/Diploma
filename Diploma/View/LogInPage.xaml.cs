@@ -28,7 +28,7 @@ public partial class LogInPage : ContentPage
         InitializeComponent();
        
     }
-    async void ToMainPage (object? sender, EventArgs e)
+    async void LogIn_To_MainPage_ButtonClicked (object? sender, EventArgs e)
     {
        // await Shell.Current.GoToAsync("/MainPage");
         await Navigation.PopAsync();
@@ -50,7 +50,7 @@ public partial class LogInPage : ContentPage
 
    
 
-    private async void LogIn_LogInButton_Clicked(object? sender, EventArgs e)
+    private async void LogIn_To_MainMenu_ButtonClicked(object? sender, EventArgs e)
     {
 
         try
@@ -58,7 +58,7 @@ public partial class LogInPage : ContentPage
             string email = currentUserEmail.ToString();
 
             string srvrdbname = "TalkingApp";
-            string srvrname = "192.168.56.1"; //"192.168.1.58";//
+            string srvrname = "192.168.56.1"; //"46.48.55.13,80"; //"192.168.1.58";//"192.168.56.1"; //
 
             string srvrusername = "diplomauser";
             string srvrpassword = "12345";

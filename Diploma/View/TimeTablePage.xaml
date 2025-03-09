@@ -75,7 +75,7 @@
             HeightRequest="40" WidthRequest="90"  
             HorizontalOptions="Start" VerticalOptions ="Start" 
             Text ="back" BackgroundColor="#4AA0AC" TextColor="White"
-            Clicked="OnBackToMainMenuClicked">
+            Clicked="TimeTable_To_Menu_ButtonCliked">
         </Button>
 
 
