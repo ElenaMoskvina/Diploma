@@ -15,7 +15,15 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Diploma.Platforms.Android.NotificationManagerService" BaseTypeListCollapsed="true">
-    <Position X="16" Y="7.25" Width="3.5" />
+    <Position X="15.5" Y="6.25" Width="3.5" />
+    <InheritanceLine Type="System.Object" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.125" Y="4.95" />
+        <Point X="17.125" Y="5.648" />
+        <Point X="17.375" Y="5.648" />
+        <Point X="17.375" Y="6.25" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAACAAAAAIAAAAFAAAAAEAIAQAAAQAAABAAAAAA=</HashCode>
       <FileName>Platforms\Android\NotificationManagerService.cs</FileName>
@@ -23,7 +31,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="Diploma.Platforms.Android.NotificationPermission">
-    <Position X="22.25" Y="2.5" Width="3" />
+    <Position X="22.75" Y="2.5" Width="3" />
     <TypeIdentifier>
       <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Platforms\Android\NotificationPermission.cs</FileName>
@@ -75,11 +83,12 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Diploma.View.CallPage">
-    <Position X="7" Y="12" Width="3.75" />
+    <Position X="11.25" Y="16.25" Width="3.75" />
     <InheritanceLine Type="Microsoft.Maui.Controls.ContentPage" ManuallyRouted="true" FixedToPoint="true">
       <Path>
         <Point X="8.875" Y="9.04" />
-        <Point X="8.875" Y="12" />
+        <Point X="8.875" Y="17" />
+        <Point X="11.25" Y="17" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -125,7 +134,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="System.Object">
-    <Position X="16" Y="2.75" Width="2.25" />
+    <Position X="16" Y="2.5" Width="2.25" />
     <TypeIdentifier />
   </Class>
   <Class Name="Android.Content.BroadcastReceiver" Collapsed="true">
@@ -142,7 +151,7 @@
     <TypeIdentifier />
   </Class>
   <Class Name="Microsoft.Maui.ApplicationModel.Permissions" Collapsed="true">
-    <Position X="23" Y="0.75" Width="1.5" />
+    <Position X="28" Y="1" Width="1.5" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
@@ -252,7 +261,7 @@
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAEAAAAAAABAEAAAAAAAAAIAAAAABgAAAAE=</HashCode>
+      <HashCode>AAAAAAAAAAEAAAAAAABAEAAAAAAAAAIAAAEABAAAAAE=</HashCode>
       <FileName>View\SingUpPage.xaml.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -271,12 +280,12 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Diploma.Models.CallPageModel">
-    <Position X="20" Y="5.25" Width="1.75" />
+    <Position X="20" Y="5" Width="1.75" />
     <InheritanceLine Type="System.Object" ManuallyRouted="true">
       <Path>
-        <Point X="17.125" Y="5.2" />
-        <Point X="17.125" Y="5.898" />
-        <Point X="20" Y="5.898" />
+        <Point X="17.125" Y="4.95" />
+        <Point X="17.125" Y="5.648" />
+        <Point X="20" Y="5.648" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -288,8 +297,8 @@
     <Position X="20" Y="3.5" Width="1.75" />
     <InheritanceLine Type="System.Object" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="18.25" Y="3.938" />
-        <Point X="18.625" Y="3.938" />
+        <Point X="18.25" Y="3.688" />
+        <Point X="18.625" Y="3.688" />
         <Point X="18.625" Y="4.125" />
         <Point X="20" Y="4.125" />
       </Path>
@@ -307,14 +316,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Diploma.Models.TimeTablePageModel">
-    <Position X="20" Y="7" Width="1.75" />
+    <Position X="20" Y="6.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAkAAAAAAAAAAAAAgAAAAAAAAQAAAAAAAAiAAAAAAA=</HashCode>
       <FileName>Models\TimeTablePageModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="Diploma.INotificationManagerService">
-    <Position X="22.75" Y="7.75" Width="3" />
+    <Position X="22.5" Y="7.75" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAABAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>NotificationManagerService.cs</FileName>

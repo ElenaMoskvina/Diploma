@@ -1,12 +1,10 @@
 
 using Diploma.Models;
 using Microsoft.Data.SqlClient;
-
-
-
+using System.Security.Cryptography;
+using System.Text;
 
 namespace Diploma.View;
-
 
 public partial class LogInPage : ContentPage
 {
@@ -16,12 +14,10 @@ public partial class LogInPage : ContentPage
         InitializeComponent();
         notificationManager = manager;
     }
-
   
     public string currentUserEmail;
     public string currentUserPassword;
     List<LogInPageModel> CurrentUser = new List<LogInPageModel>();
-
 
     public LogInPage()
     {
@@ -37,18 +33,11 @@ public partial class LogInPage : ContentPage
     private async void EmailTextChanged(object? sender, TextChangedEventArgs e )
     {
         currentUserEmail = e.NewTextValue;
-
     }
-
-   
     private async void PasswordTextChanged(object? sender, TextChangedEventArgs e)
     {
-
         currentUserPassword = e.NewTextValue; 
-
     }
-
-   
 
     private async void LogIn_To_MainMenu_ButtonClicked(object? sender, EventArgs e)
     {
@@ -58,7 +47,7 @@ public partial class LogInPage : ContentPage
             string email = currentUserEmail.ToString();
 
             string srvrdbname = "TalkingApp";
-            string srvrname = "192.168.56.1"; //"46.48.55.13,80"; //"192.168.1.58";//"192.168.56.1"; //
+            string srvrname = 
 
             string srvrusername = "diplomauser";
             string srvrpassword = "12345";
@@ -93,39 +82,38 @@ public partial class LogInPage : ContentPage
                         }
                         );
                     }
-
                     reader.Close();
                     sqlConnection.Close();
                 }
+            }
+               int i = currentUser.Count-1;
+
+            if (currentUserPassword == null)
+            {
+                await Navigation.PopAsync();
 
             }
-                int i = currentUser.Count-1;
-               string foundCurrentUserPassword = currentUser[i].Password.ToString();
-
-                if (currentUserPassword == foundCurrentUserPassword)
+            else
+            {
+                string foundCurrentUserPassword = currentUser[i].Password.ToString();
+                MD5 MD5Hash = MD5.Create();
+                byte[] passwordbytes = Encoding.ASCII.GetBytes(currentUserPassword);
+                byte[] passwordBytesHash = MD5Hash.ComputeHash(passwordbytes);
+                string passwordHash = Convert.ToHexString(passwordBytesHash);
+                if (foundCurrentUserPassword == passwordHash)
                 {
                     await Navigation.PushAsync(new MainMenuPage(notificationManager));
                 }
                 else
                 {
                     await Navigation.PopAsync();
-
                 }
-
-
-            
+            }          
         }
         catch (Exception ex)
         {
-
             Console.WriteLine(ex.Message);
-
             throw;
         }
-
     }
-
-      
-
-
 }

@@ -55,7 +55,7 @@ public partial class CallPage : ContentPage
         try
         {
             string srvrdbname = "TalkingApp";
-            string srvrname = "192.168.56.1"; //"46.48.55.13,80"; //"192.168.1.58";//"192.168.56.1"; //
+            string srvrname = 
             string srvrusername = "diplomauser";
             string srvrpassword = "12345";
             List<CallPageModel> callPageModel = new List<CallPageModel>();
