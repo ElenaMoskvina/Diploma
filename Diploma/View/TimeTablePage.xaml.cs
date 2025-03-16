@@ -28,9 +28,9 @@ public partial class TimeTablePage : ContentPage
     int notificationNumber = 0;
   
     static string srvrdbname = "TalkingApp";
-    static string srvrname = 
-    static string srvrusername = "diplomauser";
-    static string srvrpassword = "12345";
+    static string srvrname = ;
+    static string srvrusername = "";
+    static string srvrpassword = "";
     static string sqlconn = $"Data Source={srvrname};Initial Catalog={srvrdbname};User ID={srvrusername};Password={srvrpassword}; TrustServerCertificate=True; Encrypt=False";
 
    

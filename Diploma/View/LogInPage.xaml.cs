@@ -49,8 +49,8 @@ public partial class LogInPage : ContentPage
             string srvrdbname = "TalkingApp";
             string srvrname = 
 
-            string srvrusername = "diplomauser";
-            string srvrpassword = "12345";
+            string srvrusername = "";
+            string srvrpassword = "";
             List<LogInPageModel> currentUser = new List<LogInPageModel>();
 
             currentUser.Add(new LogInPageModel { Email = "Admin", Password = "Admin" });

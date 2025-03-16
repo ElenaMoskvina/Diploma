@@ -46,8 +46,8 @@ public partial class SingUpPage : ContentPage
 
             string srvrdbname = "TalkingApp";
             string srvrname = 
-            string srvrusername = "diplomauser";
-            string srvrpassword = "12345";
+            string srvrusername = "";
+            string srvrpassword = "";
 
             if (String.IsNullOrEmpty(email) || String.IsNullOrEmpty(passwordHash))
 

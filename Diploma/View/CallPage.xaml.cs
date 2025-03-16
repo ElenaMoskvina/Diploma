@@ -56,8 +56,8 @@ public partial class CallPage : ContentPage
         {
             string srvrdbname = "TalkingApp";
             string srvrname = 
-            string srvrusername = "diplomauser";
-            string srvrpassword = "12345";
+            string srvrusername = "";
+            string srvrpassword = "";
             List<CallPageModel> callPageModel = new List<CallPageModel>();
 
             string sqlconn = $"Data Source={srvrname};Initial Catalog={srvrdbname};User ID={srvrusername};Password={srvrpassword}; TrustServerCertificate=True; Encrypt=False";
